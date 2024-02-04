@@ -14,7 +14,7 @@ Note: if you're not comfortable running web requests with `curl` or similar tool
 
 To get the current configuration (replace `API-TOKEN` and `SITE-ID` with your values from above):
 ```bash
-curl -s -H "Authorization: Bearer API-TOKEN" https://api.netzeroapp.io/api/v1/SITE_ID/config | jq
+curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzeroapp.io/api/v1/$SITE_ID/config
 {
   "backup_reserve_percent": 80,
   "operational_mode": "autonomous",
@@ -34,9 +34,9 @@ To modify configuration, send a POST request with new values.  The values that c
 You can modify one or more of these values in the same request.
 
 ```bash
-curl -s -H "Authorization: Bearer API-TOKEN" -H "Content-Type: application/json" \
+curl -s -H "Authorization: Bearer $API_TOKEN" -H "Content-Type: application/json" \
     --data '{"backup_reserve_percent": 30, "operational_mode": "self_consumption"}' \
-    https://api.netzeroapp.io/api/v1/SITE_ID/config | jq
+    https://api.netzeroapp.io/api/v1/$SITE_ID/config
 {
   "backup_reserve_percent": 30,
   "operational_mode": "self_consumption",
@@ -49,3 +49,5 @@ curl -s -H "Authorization: Bearer API-TOKEN" -H "Content-Type: application/json"
 The response is similar to the GET request: the current configuration (now including changed values) and status of the Powerwall.
 
 ## Automation with IFTTT
+
+TBD
