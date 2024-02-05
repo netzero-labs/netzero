@@ -6,4 +6,4 @@
 
 ## Documentation
 
-- [Automation HOWTO](docs/Automation.md)
+- [Powerwall Automation](docs/Automation.md)
