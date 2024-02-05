@@ -64,5 +64,8 @@ The response mirrors that of the GET request, providing the updated configuratio
 You can utilize the API token to automate Powerwall configuration changes through [IFTTT](https://ifttt.com/) (If This, Then That). For instance, to establish a specific backup reserve percentage daily at a designated time:
 
 1. Visit https://ifttt.com/create.
-2. *If This*: Choose Date & Time, then select "Every day at," specify the desired time, and create the trigger.
-3. *Then That*: Search for the Webhooks service, and select "Make a web request". Configure the web request as illustrated below (substitute 123456 with your energy site ID and AaBbCc with your API token).
+2. **If This**: Choose Date & Time, then select Every day at, specify the desired time, and create the trigger.
+3. **Then That**: Search for the **Webhooks** service, and select Make a web request. Configure the web request as illustrated below
+(substitute 123456 with your energy site ID and AaBbCc with your API token).
+
+<img src="ifttt.png" width="300" alt="IFTTT" />
