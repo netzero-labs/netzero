@@ -14,6 +14,7 @@ API token and energy site ID by navigating to the mode menu (first menu in the t
 **Powerwall Automation**. It's important to keep your API token secure, as while it provides access only
 to the data displayed here, it does grant the ability to manage Powerwall configuration.
 
+Note: Powerwall Automation is currently available in the web version and coming to mobile apps soon!
 
 ## Automation with IFTTT
 You can utilize the API token to automate Powerwall configuration changes through [IFTTT](https://ifttt.com/) (If This, Then That).
@@ -41,6 +42,7 @@ To retrieve the current configuration, substitute `$API_TOKEN` and `$SITE_ID` wi
 
 ```bash
 curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzeroapp.io/api/v1/$SITE_ID/config
+
 {
   "backup_reserve_percent": 80,
   "operational_mode": "autonomous",
@@ -64,6 +66,7 @@ You can modify one or more of these values in the same request.
 curl -s -H "Authorization: Bearer $API_TOKEN" -H "Content-Type: application/json" \
     --data '{"backup_reserve_percent": 50, "operational_mode": "self_consumption"}' \
     https://api.netzeroapp.io/api/v1/$SITE_ID/config
+
 {
   "backup_reserve_percent": 50,
   "operational_mode": "self_consumption",
@@ -77,5 +80,4 @@ curl -s -H "Authorization: Bearer $API_TOKEN" -H "Content-Type: application/json
 The response mirrors that of the GET request, providing the updated configuration (inclusive of any changes made) along with the Powerwall's current status.
 
 ## Questions or Issues
-
 You can submit issues or post questions here: [Netzero Issues](https://github.com/netzero-labs/netzero/issues).
