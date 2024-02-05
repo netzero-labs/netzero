@@ -56,7 +56,7 @@ curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzeroapp.io/api/v1/$
 To modify the configuration, send a POST request with new values. You can adjust one or more of the following parameters in the same request:
 
 - `backup_reserve_percent`: Integer values ranging from `0` to `100`.
-- `operational_mode`: Select either `autonomous` or `self_consumption`.
+- `operational_mode`: Select either `autonomous` (the same as Time-Based Control in the Tesla app which means the system will look at the power rates defined in the Tesla app, Powerwall charge levels, and try to minimize the total cost of power, but it will not directly take into consideration the cost of "non-bypassable charges) or `self_consumption` (the same as Self-Powered in the Tesla app: which means use power from solar and Powerwall and then use grid power).
 - `energy_exports`: Options are `pv_only` (export solar only), `battery_ok` (export everything), or `never` (no export).
 - `grid_charging`: Select either `true` or `false`.
 
