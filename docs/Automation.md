@@ -15,9 +15,21 @@ It's important to keep your API token secure, as while it provides access only t
 displayed here, it does grant the ability to manage Powerwall configuration.
 
 
+## Automation with IFTTT
+
+You can utilize the API token to automate Powerwall configuration changes through [IFTTT](https://ifttt.com/) (If This, Then That). For instance, to establish a specific backup reserve percentage daily at a designated time:
+
+1. Visit https://ifttt.com/create.
+2. **If This**: Choose Date & Time, then select Every day at, specify the desired time, and create the trigger.
+3. **Then That**: Search for the **Webhooks** service, and select Make a web request. Configure the web request as illustrated below
+(substitute 123456 with your energy site ID and AbCdEf with your API token, both obtained above).
+
+<img src="ifttt.png" width="300" alt="IFTTT" />
+
+
 ## Automation with API requests
-Note: If you're unfamiliar with running web requests using `curl` or similar tools, you can proceed
-to the next section for no-code automation using IFTTT.
+If you're familiar with running web requests using `curl` or similar tools, you can also manage the
+configuration with scripts.
 
 To retrieve the current configuration, substitute `$API_TOKEN` and `$SITE_ID` with your respective values obtained above:
 
@@ -57,15 +69,3 @@ curl -s -H "Authorization: Bearer $API_TOKEN" -H "Content-Type: application/json
 ```
 
 The response mirrors that of the GET request, providing the updated configuration (inclusive of any changes made) along with the Powerwall's current status.
-
-
-## Automation with IFTTT
-
-You can utilize the API token to automate Powerwall configuration changes through [IFTTT](https://ifttt.com/) (If This, Then That). For instance, to establish a specific backup reserve percentage daily at a designated time:
-
-1. Visit https://ifttt.com/create.
-2. **If This**: Choose Date & Time, then select Every day at, specify the desired time, and create the trigger.
-3. **Then That**: Search for the **Webhooks** service, and select Make a web request. Configure the web request as illustrated below
-(substitute 123456 with your energy site ID and AaBbCc with your API token).
-
-<img src="ifttt.png" width="300" alt="IFTTT" />
