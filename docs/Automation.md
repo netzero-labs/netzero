@@ -22,10 +22,14 @@ For instance, to establish a specific backup reserve percentage daily at a desig
 
 1. Visit https://ifttt.com/create.
 2. **If This**: Choose Date & Time, then select Every day at, specify the desired time, and create the trigger.
-3. **Then That**: Search for the **Webhooks** service, and select Make a web request. Configure the web request as illustrated below
-(substitute 123456 with your energy site ID and AbCdEf with your API token, both obtained above).
+3. **Then That**: Search for the **Webhooks** service, and select Make a web request. Configure the web request as illustrated below.
+Substitute `123456` with your energy site ID and `AbCdEf` with your API token, both obtained above.  Replace `60` with your desired
+backup reserve percentage.
 
 <img src="ifttt.png" width="300" alt="IFTTT" />
+
+Note: Utilizing Webhooks requires a PRO IFTTT plan (currently $3.49/month). In the future, Netzero will offer in-app schedule configuration
+as an alternative. For more complex rules (e.g., incorporating weather or other conditions), IFTTT remains a viable option.
 
 
 ## Automation with API requests
