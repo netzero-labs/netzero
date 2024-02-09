@@ -1,4 +1,4 @@
-# Netzero API Automation HOWTO
+# Netzero Automation HOWTO
 
 
 ## Introduction
@@ -41,7 +41,7 @@ curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzeroapp.io/api/v1/$
   "energy_exports": "pv_only",
   "grid_charging": true,
   "percentage_charged": 98,
-  "grid_status": "Active"
+  "grid_status": "Active (on_grid)"
 }
 ```
 
@@ -64,7 +64,7 @@ curl -s -H "Authorization: Bearer $API_TOKEN" -H "Content-Type: application/json
   "energy_exports": "pv_only",
   "grid_charging": true,
   "percentage_charged": 98,
-  "grid_status": "Active"
+  "grid_status": "Active (on_grid)"
 }
 ```
 
