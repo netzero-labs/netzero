@@ -9,20 +9,19 @@ reserve, operational mode, energy exports, and grid charging.
 
 
 ## API Token
-Begin by logging into your Tesla account using the web app at https://app.netzeroapp.io. Access
-your API token and energy site ID by navigating to the user menu (located at the top right corner).
-It's important to keep your API token secure, as while it provides access only to the data
-displayed here, it does grant the ability to manage Powerwall configuration.
+Begin by logging into your Tesla account using the [Netzero app](https://www.netzeroapp.io). Access your
+API token and energy site ID by navigating to the mode menu (first menu in the top-right) and selecting
+**Powerwall Automation**. It's important to keep your API token secure, as while it provides access only
+to the data displayed here, it does grant the ability to manage Powerwall configuration.
 
 
 ## Automation with IFTTT
-
 You can utilize the API token to automate Powerwall configuration changes through [IFTTT](https://ifttt.com/) (If This, Then That).
 For instance, to establish a specific backup reserve percentage daily at a designated time:
 
-1. Visit https://ifttt.com/create.
-2. **If This**: Choose Date & Time, then select Every day at, specify the desired time, and create the trigger.
-3. **Then That**: Search for the **Webhooks** service, and select Make a web request. Configure the web request as illustrated below.
+1. Visit https://ifttt.com/create or use the IFTTT app.
+2. **If This**: "Choose Date & Time", then select "Every day at", specify the desired time, and create the trigger.
+3. **Then That**: Search for the "Webhooks" service, and select "Make a web request". Configure the web request as illustrated below.
 Substitute `123456` with your energy site ID and `AbCdEf` with your API token, both obtained above.  Replace `60` with your desired
 backup reserve percentage.
 
@@ -30,6 +29,8 @@ backup reserve percentage.
 
 Note: Utilizing Webhooks requires a PRO IFTTT plan (currently $3.49/month). In the future, Netzero will offer in-app schedule configuration
 as an alternative. For more complex rules (e.g., incorporating weather or other conditions), IFTTT remains a viable option.
+
+You can modify other parameters in addition to backup reserve percentage, see next section for details.
 
 
 ## Automation with API requests
@@ -74,3 +75,7 @@ curl -s -H "Authorization: Bearer $API_TOKEN" -H "Content-Type: application/json
 ```
 
 The response mirrors that of the GET request, providing the updated configuration (inclusive of any changes made) along with the Powerwall's current status.
+
+## Questions or Issues
+
+You can submit issues or post questions here: [Netzero Issues](https://github.com/netzero-labs/netzero/issues).
