@@ -1,10 +1,10 @@
-# Netzero Automation HOWTO
+# Netzero - Powerwall Automation
 
 
 ## Introduction
 [Netzero for Tesla](https://www.netzeroapp.io) is an iOS/Android/web app designed for monitoring
 and optimizing your Tesla Solar/Powerwall system. Netzero offers an API that allows you to
-configure your Powerwall system, enabling you to manage configuration changes such as backup
+automate your Powerwall system, enabling you to manage configuration changes such as backup
 reserve, operational mode, energy exports, and grid charging.
 
 
@@ -17,7 +17,8 @@ displayed here, it does grant the ability to manage Powerwall configuration.
 
 ## Automation with IFTTT
 
-You can utilize the API token to automate Powerwall configuration changes through [IFTTT](https://ifttt.com/) (If This, Then That). For instance, to establish a specific backup reserve percentage daily at a designated time:
+You can utilize the API token to automate Powerwall configuration changes through [IFTTT](https://ifttt.com/) (If This, Then That).
+For instance, to establish a specific backup reserve percentage daily at a designated time:
 
 1. Visit https://ifttt.com/create.
 2. **If This**: Choose Date & Time, then select Every day at, specify the desired time, and create the trigger.
