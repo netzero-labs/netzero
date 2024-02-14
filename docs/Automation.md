@@ -14,7 +14,6 @@ API token and energy site ID by navigating to the mode menu (first menu in the t
 **Powerwall Automation**. It's important to keep your API token secure, as while it provides access only
 to the data displayed here, it does grant the ability to manage Powerwall configuration.
 
-Note: Powerwall Automation is currently available in the web version and coming to mobile apps soon!
 
 ## Automation with IFTTT
 You can utilize the API token to automate Powerwall configuration changes through [IFTTT](https://ifttt.com/) (If This, Then That).
@@ -56,7 +55,7 @@ curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzeroapp.io/api/v1/$
 To modify the configuration, send a POST request with new values. You can adjust one or more of the following parameters in the same request:
 
 - `backup_reserve_percent`: Integer values ranging from `0` to `100`.
-- `operational_mode`: Select either `autonomous` or `self_consumption`.
+- `operational_mode`: Select either `autonomous` (Time-Based Control, using stored energy to maximize savings based on your utility rate plan) or `self_consumption` (Self-Powered, using stored energy to power your home after the sun goes down).
 - `energy_exports`: Options are `pv_only` (export solar only), `battery_ok` (export everything), or `never` (no export).
 - `grid_charging`: Select either `true` or `false`.
 
