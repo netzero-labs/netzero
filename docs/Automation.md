@@ -49,14 +49,13 @@ curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzeroapp.io/api/v1/$
   "operational_mode": "autonomous",
   "energy_exports": "pv_only",
   "grid_charging": true,
-  "percentage_charged": 98,
+  "percentage_charged": 70,
   "grid_status": "Active (on_grid)",
 
   "live_status": {
     "solar_power": 4140,
     "energy_left": 19538.05263157895,
     "total_pack_energy": 28097,
-    "percentage_charged": 69.5378603821723,
     "battery_power": -2520,
     "load_power": 1620,
     "grid_power": 0,
