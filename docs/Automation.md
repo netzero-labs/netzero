@@ -39,7 +39,7 @@ You can modify other parameters in addition to backup reserve percentage, see ne
 If you're familiar with running web requests using `curl` or similar tools, you can also manage the
 configuration with scripts.
 
-To retrieve the current configuration, substitute `$API_TOKEN` and `$SITE_ID` with your respective values obtained above:
+To retrieve the current configuration and live status of the system, substitute `$API_TOKEN` and `$SITE_ID` with your respective values obtained above:
 
 ```bash
 curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzeroapp.io/api/v1/$SITE_ID/config
@@ -50,9 +50,31 @@ curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzeroapp.io/api/v1/$
   "energy_exports": "pv_only",
   "grid_charging": true,
   "percentage_charged": 98,
-  "grid_status": "Active (on_grid)"
+  "grid_status": "Active (on_grid)",
+
+  "live_status": {
+    "solar_power": 4140,
+    "energy_left": 19538.05263157895,
+    "total_pack_energy": 28097,
+    "percentage_charged": 69.5378603821723,
+    "battery_power": -2520,
+    "load_power": 1620,
+    "grid_power": 0,
+    [...],
+    "wall_connectors": [
+      {
+        "din": "1457768-02-G--B7S12345J12345",
+        "wall_connector_state": 2,
+        "wall_connector_fault_state": 2,
+        "wall_connector_power": 0
+      }
+    ]
+  }
 }
 ```
+
+This response includes both configuration values and the current power draw.  If you have a Wall Connector connected to your account, you'll also
+see car charging status.
 
 To modify the configuration, send a POST request with new values. You can adjust one or more of the following parameters in the same request:
 
@@ -79,11 +101,12 @@ curl -s -H "Authorization: Bearer $API_TOKEN" -H "Content-Type: application/json
   "energy_exports": "pv_only",
   "grid_charging": true,
   "percentage_charged": 98,
-  "grid_status": "Active (on_grid)"
+  "grid_status": "Active (on_grid)",
+  "live_status": {...}
 }
 ```
 
-The response mirrors that of the GET request, providing the updated configuration (inclusive of any changes made) along with the Powerwall's current status.
+The response mirrors that of the GET request, providing the updated configuration (inclusive of any changes made) along with the live status.
 
 ## Questions or Issues
 You can submit issues or post questions here: [Netzero Issues](https://github.com/netzero-labs/netzero/issues).
