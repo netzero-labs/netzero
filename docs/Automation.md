@@ -39,9 +39,12 @@ You can modify other parameters in addition to backup reserve percentage, see ne
 If you're familiar with running web requests using `curl` or similar tools, you can also manage the
 configuration with scripts.
 
-To retrieve the current configuration and live status of the system, substitute `$API_TOKEN` and `$SITE_ID` with your respective values obtained above:
+To retrieve the current configuration and live status of the system, insert `$API_TOKEN` and `$SITE_ID` values obtained above and run:
 
 ```bash
+export API_TOKEN="..."
+export SITE_ID="..."
+
 curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzeroapp.io/api/v1/$SITE_ID/config
 
 {
@@ -106,6 +109,24 @@ curl -s -H "Authorization: Bearer $API_TOKEN" -H "Content-Type: application/json
 ```
 
 The response mirrors that of the GET request, providing the updated configuration (inclusive of any changes made) along with the live status.
+
+Here's an example with Python code instead of curl:
+
+```python
+import os
+import requests
+
+site_id = os.environ['SITE_ID']
+api_token = os.environ['API_TOKEN']
+config = {'backup_reserve_percent': 30, 'operational_mode': 'autonomous'}
+
+response = requests.post(
+    url=f'https://api.netzeroapp.io/api/v1/{site_id}/config',
+    headers={'Authorization': f'Bearer {api_token}'},
+    json=config,
+)
+print(response.json())
+```
 
 ## Questions or Issues
 You can submit issues or post questions here: [Netzero Issues](https://github.com/netzero-labs/netzero/issues).
