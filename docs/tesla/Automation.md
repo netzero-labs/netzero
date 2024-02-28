@@ -27,7 +27,7 @@ For instance, to establish a specific backup reserve percentage daily at a desig
 Substitute `123456` with your energy site ID and `AbCdEf` with your API token, both obtained above.  Replace `60` with your desired
 backup reserve percentage.
 
-<img src="../ifttt.png" width="300" alt="IFTTT" />
+<img src="ifttt.png" width="300" alt="IFTTT" />
 
 Note: Utilizing Webhooks requires a PRO IFTTT plan (currently $3.49/month). For simpler automation, use the in-app
 schedule configuration instead. IFTTT is useful for more complex rules (e.g. incorporating weather or other conditions).

@@ -26,7 +26,7 @@ For instance, to establish a specific battery reserve percentage daily at a desi
 Substitute `123456` with your system ID and `AbCdEf` with your API token, both obtained above.  Replace `60` with your desired
 battery reserve percentage.
 
-<img src="../ifttt.png" width="300" alt="IFTTT" />
+<img src="ifttt.png" width="300" alt="IFTTT" />
 
 Note: Utilizing Webhooks requires a PRO IFTTT plan (currently $3.49/month). For simpler automation, use the in-app
 schedule configuration instead. IFTTT is useful for more complex rules (e.g. incorporating weather or other conditions).
@@ -60,7 +60,7 @@ curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzeroapp.io/api/v1/$
 
 To modify the configuration, send a POST request with new values. You can adjust one or more of the following parameters in the same request:
 
-- `reserve_soc`: Integer values ranging from `0` to `100`.
+- `reserve_soc`: Integer values ranging from `0` to `100` (battery reserve percentage).
 - `battery_mode`: Select one of:
   - `Self - Consumption` (maximizes your use of your own solar power while reducing your dependence on electricity from the utility grid),
   - `Savings Mode` (minimizes your electricity bills by reducing consumption from the utility grid during peak hours when energy rates are highest),
