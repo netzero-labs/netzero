@@ -84,7 +84,7 @@ To modify the configuration, send a POST request with new values. You can adjust
 - `operational_mode`: Select one of:
   - `autonomous` (Time-Based Control, using stored energy to maximize savings based on your utility rate plan),
   - `self_consumption` (Self-Powered, using stored energy to power your home after the sun goes down).
-- `energy_exports`: Selec one of:
+- `energy_exports`: Select one of:
   - `pv_only` (export solar energy only),
   - `battery_ok` (export both solar energy and stored Powerwall energy),
   - `never` (no export).
