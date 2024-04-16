@@ -22,12 +22,13 @@ would like to participate.
 ## Configuration
 
 If Octopus Energy is your utility provider, you will see a "Utility Rate Plan" option in the
-main menu.  Configure your region, import and export tariff, and check the "Automatically
-update rate plan" checkbox.  This will result in a few changes:
+main menu.  If you're currently on an Agile Octopus plan, configure your region, import and export
+tariff, and check the "Automatically update rate plan" checkbox.  This will result in a few changes:
 - Your prior tariff configuration will be overridden.  In the future, the app will allow
   restoring the original plan; for now, make sure to write down your existing rate plan if
   you created it manually and might need it in the future.
-- Your new tariff configuration will reflect the current 24h predicted pricing.
+- Your new tariff configuration will reflect the current pricing schedule.  You can confirm the
+  pricing using the [Agile Dashboard](https://agile.octopushome.net/dashboard).
 - As new tariffs are announced (usually around 4pm), the tariff configuration will be
   automatically updated.  You do not need to keep the app open for that.
 
@@ -35,7 +36,7 @@ Note that the Tesla app's Utility Rate Plan section doesn't display dynamic tari
 
 <img src="utility-rate-plan.png" width="300" alt="Utility Rate Plan" />
 
-We will work with the Tesla team to make sure this gets corrected.  For, you can instead use the=
+We will work with the Tesla team to make sure this gets corrected.  For, you can instead use the
 Buy and Sell charts (shown by scrolling down under the Grid chart) to display the real-time prices:
 
 <img src="buy-sell-prices.png" width="300" alt="Buy and Sell Prices" />
@@ -49,4 +50,4 @@ using the Start Over function.
 
 ## Feedback
 
-Send any questions or comments to [feedback@netzeroapp.io](mailto:feedback@netzeroapp.io).
+Send any questions, comments, or issues to [feedback@netzeroapp.io](mailto:feedback@netzeroapp.io).
