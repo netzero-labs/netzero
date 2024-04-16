@@ -8,9 +8,13 @@ These utility plans have pricing that reflects the variation in wholesale electr
 due to changes in supply and demand.  The prices change frequently (as frequently as every
 30 minutes) and are usually forecast for the next 24 hours.
 
+Powerwall uses the utility rate plan to optimize its Time-Based Control.  However, it currently
+doesn't have the ability to automatically adjust based on dynamic tariffs.  Netzero will
+keep the Powerwall utility rate plan up to date, thus ensuring optimal Time-Based Control.
+
 By shifting usage based on real-time pricing (e.g. reducing usage during expensive peaks),
-users can save on electricity costs.  A solar and battery system in combination
-with accurate rate plans is a great way to achieve that goal!
+users can save on electricity costs.  A Powerwall system in combination with accurate rate plans is
+a great way to achieve that goal!
 
 ## Agile Octopus Pilot
 
