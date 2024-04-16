@@ -9,7 +9,7 @@ due to changes in supply and demand.  The prices change frequently (as frequentl
 30 minutes) and are usually forecast for the next 24 hours.
 
 By shifting usage based on real-time pricing (e.g. reducing usage during expensive peaks),
-utility customers can save on electricity costs.  A solar and battery system in combination
+users can save on electricity costs.  A solar and battery system in combination
 with accurate rate plans is a great way to achieve that goal!
 
 ## Agile Octopus Pilot
@@ -36,7 +36,7 @@ Note that the Tesla app's Utility Rate Plan section doesn't display dynamic tari
 
 <img src="utility-rate-plan.png" width="300" alt="Utility Rate Plan" />
 
-We will work with the Tesla team to make sure this gets corrected.  For, you can instead use the
+We will work with the Tesla team to make sure this gets corrected.  For now, you can instead use the
 Buy and Sell charts (shown by scrolling down under the Grid chart) to display the real-time prices:
 
 <img src="buy-sell-prices.png" width="300" alt="Buy and Sell Prices" />
