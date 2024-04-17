@@ -1,0 +1,38 @@
+.env*
+cache.json
+misc/
+var/
+out
+
+db.sqlite3
+
+#Emacs
+*~
+
+# Sublime Text
+*.sublime-*
+
+# Vim
+*.sw*
+
+# VSCode
+*.vscode
+
+# AWS credentials
+.aws/
+
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+bin/
+.Python
+env*/
+venv/
+
+*.min.js
+*.min.css

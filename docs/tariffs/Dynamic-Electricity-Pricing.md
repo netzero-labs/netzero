@@ -29,7 +29,7 @@ If Octopus Energy is your utility provider, you will see a "Utility Rate Plan" o
 main menu.  If you're currently on an Agile Octopus plan, configure your region, import and export
 tariff, and check the "Automatically update rate plan" checkbox.  This will result in a few changes:
 - Your prior tariff configuration will be overridden.  In the future, the app will allow
-  restoring the original plan; for now, make sure to write down your existing rate plan if
+  restoring the original plan; for now, make sure to separately store your existing rate plan if
   you created it manually and might need it in the future.
 - Your new tariff configuration will reflect the current pricing schedule.  You can confirm the
   pricing using the [Agile Dashboard](https://agile.octopushome.net/dashboard).
@@ -48,8 +48,8 @@ Buy and Sell charts (shown by scrolling down under the Grid chart) to display th
 ## Disabling Automatic Updates
 
 If you wish to stop updating your dynamic tariffs, uncheck the "Automatically update rate plan"
-checkbox under "Utility Rate Plan".  Make sure to also configure a new rate plan using the Tesla app,
-using the Start Over function.
+checkbox under "Utility Rate Plan".  Make sure to also configure a new fixed rate plan with the
+Tesla app, using the Start Over button.
 
 
 ## Feedback
