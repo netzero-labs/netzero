@@ -45,8 +45,9 @@ Buy and Sell charts (shown by scrolling down under the Grid chart) to display th
 
 <img src="buy-sell-prices.png" width="300" alt="Buy and Sell Prices" />
 
-Note: for plans with fixed outgoing (sell) prices, the Sell chart is currently not shown.  Tesla is
-aware of this issue.
+Note: for plans with fixed outgoing (sell) prices, the sell prices are adjusted to never exceed buy
+prices.  This results in better Powerwall behavior (more cycling when required), due to a limitation
+in Tesla's Time-Based Control algorithm.
 
 ## Disabling Automatic Updates
 
