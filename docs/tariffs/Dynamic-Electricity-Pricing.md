@@ -16,17 +16,23 @@ By shifting usage based on real-time pricing (e.g. reducing usage during expensi
 users can save on electricity costs.  A Powerwall system in combination with accurate rate plans is
 a great way to achieve that goal!
 
-## Agile Octopus Pilot
+## Supported Plans
 
-Netzero currently supports [Agile Octopus](https://octopus.energy/smart/agile/) plans from
-Octopus Energy.  We will add support for additional plans and utilities in the future, [let
+Netzero is currently piloting support for the following plans:
+- [Agile Octopus](https://octopus.energy/smart/agile/) (Octopus Energy, UK)
+- [Tibber](https://tibber.com/en) (Sweden, Norway, Germany & the Netherlands)
+- [Amber Electric](https://www.amber.com.au/) (Australia)
+
+If you are in a region with a supported provider, you will see a "Utility Rate Plan" option in the
+main menu.
+
+We will add support for additional plans and utilities in the future, [let
 us know](mailto:feedback@netzeroapp.io) if you're currently on a dynamic plan and
 would like to participate.
 
-## Configuration
+## Agile Octopus Configuration
 
-If Octopus Energy is your utility provider, you will see a "Utility Rate Plan" option in the
-main menu.  If you're currently on an Agile Octopus plan, configure your region, import and export
+If you're currently on an Agile Octopus plan, configure your region, import and export
 tariff, and check the "Automatically update rate plan" checkbox.  This will result in a few changes:
 - Your prior tariff configuration will be overridden.  In the future, the app will allow
   restoring the original plan; for now, make sure to separately store your existing rate plan if
@@ -48,6 +54,10 @@ Buy and Sell charts (shown by scrolling down under the Grid chart) to display th
 Note: for plans with fixed outgoing (sell) prices, the sell prices are adjusted to never exceed buy
 prices.  This results in better Powerwall behavior (more cycling when required), due to a limitation
 in Tesla's Time-Based Control algorithm.
+
+## Tibber and Amber Electric Configuration
+
+Tibber and Amber Electric plans can be configured by providing your API token from the provider.  Follow the instructions in the app.
 
 ## Disabling Automatic Updates
 
