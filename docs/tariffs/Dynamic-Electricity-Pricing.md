@@ -18,7 +18,7 @@ a great way to achieve that goal!
 
 ## Supported Plans
 
-Netzero is currently piloting support for the following plans:
+Netzero currently supports the following plans:
 - [Agile Octopus](https://octopus.energy/smart/agile/) (Octopus Energy, UK)
 - [Tibber](https://tibber.com/en) (Sweden, Norway, Germany & the Netherlands)
 - [Amber Electric](https://www.amber.com.au/) (Australia)
