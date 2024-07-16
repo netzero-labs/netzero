@@ -30,7 +30,7 @@ backup reserve percentage.
 <img src="ifttt.png" width="300" alt="IFTTT" />
 
 Note: Utilizing Webhooks requires a PRO IFTTT plan (currently $3.49/month). For simpler automation, use the in-app
-schedule configuration instead. IFTTT is useful for more complex rules (e.g., incorporating weather or other conditions.
+schedule configuration instead. IFTTT is useful for more complex rules, e.g. incorporating weather or dates.
 
 You can modify other parameters in addition to backup reserve percentage, see next section for details.
 
