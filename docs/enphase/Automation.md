@@ -2,8 +2,7 @@
 
 
 ## Introduction
-[Netzero](https://www.netzeroapp.io) is an iOS/Android/web app designed for monitoring
-and optimizing your Enphase solar/battery system. Netzero allows you to schedule battery
+[Netzero](https://www.netzeroapp.io) allows you to schedule battery
 configuration changes using the app (battery reserve, system profile, and grid charging).
 
 For more advanced use, the app also offers an API that allows to manage these configuration changes.

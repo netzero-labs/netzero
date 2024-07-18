@@ -1,8 +1,7 @@
 # Netzero - Dynamic Electricity Pricing
 
 ## Introduction
-[Netzero](https://www.netzeroapp.io) is an iOS/Android/web app designed for monitoring
-and optimizing your Tesla Solar/Powerwall system. Netzero is adding support for dynamic
+[Netzero](https://www.netzeroapp.io) is adding support for dynamic
 electricity pricing (also known as dynamic tariffs, day-ahead pricing, or wholesale pricing).
 These utility plans have pricing that reflects the variation in wholesale electricity costs
 due to changes in supply and demand.  The prices change frequently (as frequently as every

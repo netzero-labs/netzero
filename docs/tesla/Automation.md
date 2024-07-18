@@ -2,8 +2,7 @@
 
 
 ## Introduction
-[Netzero for Tesla](https://www.netzeroapp.io) is an iOS/Android/web app designed for monitoring
-and optimizing your Tesla Solar/Powerwall system. Netzero allows you to schedule Powerwall
+[Netzero](https://www.netzeroapp.io) allows you to schedule Powerwall
 configuration changes using the app (backup reserve, operational mode, energy exports, and grid
 charging).
 
