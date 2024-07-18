@@ -1,4 +1,4 @@
-# Netzero - Powerwall Capacity Estimates
+# Netzero - Powerwall Capacity Estimate
 
 ## Introduction
 
@@ -26,9 +26,10 @@ After finalizing the capacity estimation methodology, we evaluated its accuracy 
 
 If your estimated capacity is missing, it could be due to several reasons:
 
-- **Backup Reserve Set to 100%**: This setting prevents Powerwalls from charging or discharging, so capacity estimation is not possible.
-- **Recent Installation**: Newly installed Powerwalls may not have sufficient data for capacity estimation. Please check again after a week of consistent charging days.
-- **Grid-Only Charging**: Powerwalls that charge exclusively from the grid tend to produce less accurate capacity estimates compared to those charging from solar.
+- **Backup reserve set to 100%**: This setting prevents Powerwalls from charging or discharging, so capacity estimation is not possible.
+- **Recent installation**: Newly installed Powerwalls may not have sufficient data for capacity estimation. Please check again after a week of consistent charging days.
+- **Grid-only charging**: Powerwalls that charge exclusively from the grid tend to produce less accurate capacity estimates compared to those charging from solar.
+- **Change in the number of Powerwalls**: If you have recently added or removed a Powerwall, capacity estimation needs some time to recalibrate.
 
 ## Questions or Issues
 
