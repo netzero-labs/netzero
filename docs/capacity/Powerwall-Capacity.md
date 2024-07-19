@@ -16,11 +16,11 @@ Capacity estimation involves analyzing historical Powerwall charge and discharge
 9,800 Wh / (100% - 30%) = 14,000 Wh
 ```
 
-This calculation is repeated for multiple days to achieve a statistically significant result. Through experimentation, we have determined the most representative days for accurate capacity estimation.
+This calculation is repeated with data for multiple different days, to achieve a statistically significant result. Through experimentation, we have determined the most representative days for accurate capacity estimation.
 
 ## Accuracy
 
-After finalizing the capacity estimation methodology, we evaluated its accuracy by comparing our estimates with the reported diagnostic capacity values (ground-truth capacity). This comparison, conducted on over one thousand Powerwalls, showed an average capacity error of less than 2%, confirming the reliability of our estimates.
+After finalizing the capacity estimation methodology, we evaluated its accuracy by comparing the estimates with the reported diagnostic capacity values (ground-truth capacity). This comparison, conducted on over one thousand Powerwalls, showed an average capacity error of less than 2%, confirming the reliability of the estimates.
 
 ## Troubleshooting
 
@@ -28,7 +28,6 @@ If your estimated capacity is missing, it could be due to several reasons:
 
 - **Backup reserve set to 100%**: This setting prevents Powerwalls from charging or discharging, so capacity estimation is not possible.
 - **Recent installation**: Newly installed Powerwalls may not have sufficient data for capacity estimation. Please check again after a week of consistent charging days.
-- **Grid-only charging**: Powerwalls that charge exclusively from the grid tend to produce less accurate capacity estimates compared to those charging from solar.
 - **Change in the number of Powerwalls**: If you have recently added or removed a Powerwall, capacity estimation needs some time to recalibrate.
 
 ## Questions or Issues
